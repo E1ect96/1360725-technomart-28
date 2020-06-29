@@ -1,0 +1,160 @@
+.visually-hidden {
+  display: none;
+}
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-gray: #32425C;
+  --dark-gray: #293449;
+  --dark-blue: #212A3A;
+  --basic-graylight: #C5C5C5;
+  --basic-background: rgba(0, 0, 0, 0.1); /* временный цвет */
+  --special-ylellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
+  --black: #000000;
+  --white: #FFFFFF;
+  --shadow: rgba(0, 0, 0, 0.24);
+}
+.main-header{
+  background-color: var(--basic-background);
+}
+.header-logo {
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--shadow);
+}
+.p-large {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.checkout {
+  background-color: var(--basic-green);
+}
+.header-menu {
+  background-color: var(--dark-gray);
+}
+.description {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+.header-phone {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  border-color: var(--white);
+  border-width: 3px;
+  border-style: solid;
+}
+.signature {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-gray);
+}
+.login-btn, .signup-btn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+  background-color: var(--white);
+}
+.main-header-nav {
+  background-color: var(--basic-gray);
+}
+.heading-large {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.p-small {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+.heading-large + .p-small, .p-small + .p-small {
+  color: var(--black);
+}
+.p-large {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.transport-company-list {
+  color: var(--black);
+}
+.company-details-btn {
+  background-color: var(--basic-red);
+  color: var(--white);
+  text-transform: uppercase;
+}
+.feedback-btn {
+  background-color: var(--basic-red);
+  color: var(--white);
+  text-transform: uppercase;
+}
+.main-footer {
+  background-color: var(--basic-gray);
+  color: var(--white);
+}
+.footer-logo {
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--shadow);
+}
+.footer-catalog a {
+  color: var(--special-yellowlight);
+}
+.footer-botom {
+  background-color: var(--dark-gray);
+}
+.p-medium {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+.social-logo {
+  width: 21px;
+  height: 21px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 10px;
+  border-color: var(--dark-blue);
+  background-color: var(--dark-blue);
+}
+.footer-email, .link {
+  color: var(--special-yellowlight);
+}
