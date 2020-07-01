@@ -22,7 +22,10 @@ a {
   --basic-gray: #32425C;
   --dark-gray: #293449;
   --dark-blue: #212A3A;
+  --darker-blue: #161D29;
+  --darkest-blue: #1D2739;
   --basic-graylight: #C5C5C5;
+  --dark-graylight: #E5E5E5;
   --basic-graydark: #A9A9A9;
   --basic-background: #F1F5F7;
   --main-headding-background: #F2F6F8;
@@ -33,10 +36,11 @@ a {
   --special-yellowlight: #FFD180;
   --success: #5FBB2D;
   --warning: #FFBF47;
-  --error: #BA2732;
+  --red-dark: #BA2732;
   --black: #000000;
   --white: #FFFFFF;
   --shadow: rgba(0, 0, 0, 0.24);
+  --translucent: rgba(255, 255, 255, 0.5);
 }
 .main-header{
   background-color: var(--basic-background);
@@ -51,11 +55,33 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
+.header-logo:active {
+  background-color: var(--red-dark);
+}
+.bookmarks:active {
+  background-color: var(--darker-blue);
+  color: var(--translucent);
+}
+.cart:active {
+  background-color: var(--darker-blue);
+  color: var(--translucent);
+}
+.checkout:active {
+  color: var(--translucent);
+}
+.checkout:hover{
+  background-color: var(--success);
+}
+.search:focus{
+  background-color: var(--white);
+  color: var(--black);
+}
 .checkout {
   background-color: var(--basic-green);
 }
 .header-menu {
   background-color: var(--dark-gray);
+  box-shadow: inset 0px -5px 0px var(--dark-gray);
 }
 .description {
   font-style: italic;
@@ -89,9 +115,24 @@ a {
   color: var(--black);
   background-color: var(--white);
 }
+.login-btn:hover, .signup-btn:hover {
+  color: var(--basic-red);
+}
+.login-btn:active, .signup-btn:active {
+  color: var(--basic-graylight);
+}
 .main-header-nav {
   background-color: var(--basic-gray);
   list-style: none;
+}
+.main-header-nav li:hover {
+  background-color: var(--dark-gray);
+}
+.main-header-nav li:active {
+  background-color: var(--darkest-blue);
+}
+.main-header-nav li a:active {
+  color: var(--translucent);
 }
 .heading-large {
   font-style: normal;
@@ -142,6 +183,12 @@ a {
 .footer-catalog a {
   color: var(--special-yellowlight);
 }
+.footer-nav li:hover, .footer-catalog li:hover {
+  text-decoration-line: underline;
+}
+.footer-nav li a:active, .footer-catalog li a:active {
+  opacity: 0.5;
+}
 .footer-botom {
   background-color: var(--dark-gray);
 }
@@ -160,8 +207,18 @@ a {
   border-color: var(--dark-blue);
   background-color: var(--dark-blue);
 }
+.social-logo:hover, .social-logo:active {
+  background-color: var(--basic-red);
+  border-color: var(--basic-red);
+}
 .footer-email, .link {
   color: var(--special-yellowlight);
+}
+.footer-email:hover, .link:hover {
+  text-decoration-line: underline;
+}
+.footer-email:active, .link:active {
+  color: var(--basic-red);
 }
 .breadcrumbs a {
   font-family: PT Sans;
@@ -204,7 +261,26 @@ a {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  background-color: var(--white);
   color: var(--black);
+  border: 1px solid var(--dark-graylight);
+}
+
+.product-card:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.new {
+  background-color: var(--basic-red);
+  color: var(--white);
+  transform: rotate(45deg);
+  text-transform: uppercase;
+}
+.text-btn {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
 }
 .product-name {
   font-family: PT Sans;
