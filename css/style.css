@@ -9,6 +9,7 @@ body {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -22,7 +23,9 @@ a {
   --dark-gray: #293449;
   --dark-blue: #212A3A;
   --basic-graylight: #C5C5C5;
-  --basic-background: rgba(0, 0, 0, 0.1); /* временный цвет */
+  --basic-graydark: #A9A9A9;
+  --basic-background: #F1F5F7;
+  --main-headding-background: #F2F6F8;
   --special-ylellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
@@ -88,6 +91,7 @@ a {
 }
 .main-header-nav {
   background-color: var(--basic-gray);
+  list-style: none;
 }
 .heading-large {
   font-style: normal;
@@ -115,6 +119,7 @@ a {
 }
 .transport-company-list {
   color: var(--black);
+  list-style: none;
 }
 .company-details-btn {
   background-color: var(--basic-red);
@@ -157,4 +162,75 @@ a {
 }
 .footer-email, .link {
   color: var(--special-yellowlight);
+}
+.breadcrumbs a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.main-heading {
+  width: 940px;
+  height: 89px;
+  padding-left: 29px;
+  padding-top: 29px;
+  background-color: var(--main-headding-background);
+  color: #32425C;
+}
+.filter-category {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.filter-items {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.filter-submit {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+}
+.product-name {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+}
+.old-price {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: var(--basic-graydark);
+}
+.price {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--basic-red);
 }
