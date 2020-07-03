@@ -70,12 +70,12 @@
       <li><a>Перфораторыы</a></li>
     </ul>
     <h1 class="main-heading heading-large">Перфораторы</h1>
-    <section>
+    <section class="filter">
       <h2>Фильтр</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="get">
-        <label for="price-range">Цена</label>
+        <label for="price-range" class="filter-category">Цена</label>
         <!-- Здесь будет слайдер-->
-        <input type="number" min="0" max="30000" value="0"> - <input type="number" min="0" max="30000" value="30000">
+        <input type="number" min="0" max="30000" value="0" class="price-min"> - <input type="number" min="0" max="30000" value="30000" class="price-max">
         <fieldset>
         <legend class="filter-category">Произодитель</legend>
         <ul class="filter-items">
@@ -124,13 +124,13 @@
         <input type="submit" value="Показать" class="filter-submit">
       </form>
     </section>
-    <section>
+    <section class="sorting">
       <h2>Сортировка:</h2>
-      <a href="#">По цене</a>
-      <a href="#">По типу</a>
-      <a href="#">По функционалу</a>
-      <a href="#">По возрастанию</a>
-      <a href="#">По убыванию</a>
+      <a href="#" class="sorting-price">По цене</a>
+      <a href="#" class="sorting-type">По типу</a>
+      <a href="#" class="sorting-functional">По функционалу</a>
+      <a href="#" class="sorting-ascending">По возрастанию</a>
+      <a href="#" class="sorting-descending">По убыванию</a>
     </section>
     <section>
       <h2 class="visually-hidden">Список товаров</h2>
@@ -233,16 +233,16 @@
         <p class="old-price"></p>
         <p class="price">12500 Р.</p>
       </div>
-      <div>
-        <a href="">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Следующая</a>
+      <div class="page-nav">
+        <a href="" class="page-1">1</a>
+        <a href="#" class="page-2">2</a>
+        <a href="#" class="page-3">3</a>
+        <a href="#" class="page-next">Следующая</a>
       </div>
     </section>
-    <section>
-      <h2>Пара слов о перфораторах</h2>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+    <section class="catalog-bottom">
+      <h2 class="heading-large">Пара слов о перфораторах</h2>
+      <p class="p-small">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
         бетоне и камне.
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
         шуруповерта и отбойного молотка.

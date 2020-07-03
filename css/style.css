@@ -30,6 +30,7 @@ a {
   --basic-graydark: #A9A9A9;
   --basic-background: #F1F5F7;
   --basic-linen: #F9F5F0;
+  --dark-lilen: #F7F3EC;
   --main-headding-background: #F2F6F8;
   --special-ylellow: #FFBF47;
   --special-blue: #3BBCE3;
@@ -202,7 +203,6 @@ a {
 }
 
 
-
 .description {
   font-style: italic;
   font-weight: normal;
@@ -361,6 +361,24 @@ a {
   background-color: var(--main-headding-background);
   color: #32425C;
 }
+.filter {
+  width: 220px;
+  background-color: var(--white);
+}
+.filter h2 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  height: 38px;
+  background-color: var(--dark-lilen);
+  color: var(--black);
+  text-transform: uppercase;
+}
+.price-min, .price-max {
+  background-color: var(--dark-lilen);
+}
 .filter-category {
   font-family: PT Sans;
   font-style: normal;
@@ -385,9 +403,33 @@ a {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  width: 220px;
+  height: 38px;
   background-color: var(--white);
   color: var(--black);
   border: 1px solid var(--dark-graylight);
+}
+.sorting {
+  width: 700px;
+  height: 38px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--dark-lilen);
+  text-transform: uppercase;
+}
+.sorting h2 {
+  color: var(--black);
+}
+.sorting-price, .sorting-ascending {
+  color: var(--basic-red);
+}
+.sorting-type, .sorting-functional, .sorting-descending {
+  color: rgba(var(--black), 0.3);
+  opacity: 0.3;
+  border-bottom: 1px dotted var(--basic-red);
 }
 .product-card {
   width: 220px;
@@ -438,4 +480,29 @@ a {
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--basic-red);
+}
+.page-nav {
+  width: 248px;
+  height: 38px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.page-1 {
+  background-color: var(--basic-red);
+  color: var(--white);
+  border-radius: 2px;
+}
+.page-2, .page-3, .page-next {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--dark-graylight);
+  border-radius: 2px;
+}
+.catalog-bottom {
+  height: 261px;
+  background-color: var(--basic-background);
 }
