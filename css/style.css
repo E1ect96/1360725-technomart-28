@@ -20,6 +20,7 @@ a {
   --basic-red: #EE3643;
   --basic-green: #63A63E;
   --basic-gray: #32425C;
+  --light-gray: #EAEAEA;
   --dark-gray: #293449;
   --dark-blue: #212A3A;
   --darker-blue: #161D29;
@@ -28,12 +29,14 @@ a {
   --dark-graylight: #E5E5E5;
   --basic-graydark: #A9A9A9;
   --basic-background: #F1F5F7;
+  --basic-linen: #F9F5F0;
   --main-headding-background: #F2F6F8;
   --special-ylellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
   --special-greenlight: #8ED78F;
   --special-yellowlight: #FFD180;
+  --special-orange: #FFC047;
   --success: #5FBB2D;
   --warning: #FFBF47;
   --red-dark: #BA2732;
@@ -41,6 +44,7 @@ a {
   --white: #FFFFFF;
   --shadow: rgba(0, 0, 0, 0.24);
   --translucent: rgba(255, 255, 255, 0.5);
+  --wight: rgba(255, 255, 255, 0.3);
 }
 .main-header{
   background-color: var(--basic-background);
@@ -83,6 +87,122 @@ a {
   background-color: var(--dark-gray);
   box-shadow: inset 0px -5px 0px var(--dark-gray);
 }
+.materials-card {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+  background-color: var(--special-ylellow);
+}
+.card-btn{
+  background-color: var(--wight);
+  color: var(--white);
+  text-transform: uppercase;
+}
+.tools-card {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+  background-color: var(--special-blue);
+}
+.technics-card {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+  background-color: var(--special-lilac);
+}
+.sale-card {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+  background-color: var(--special-greenlight);
+}
+.delivery-card {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+  background-color: var(--special-orange);
+}
+.slider {
+  background-color: rgba(0,0,0,0.5); /* Временный фон что бы было видео текст*/
+}
+.slider-title {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.slider-btn {
+  background-color: var(--basic-red);
+}
+.popular-goods {
+  background-color: var(--white);
+}
+.popular-manufacturers {
+  background-color: var(--white);
+
+}
+.popular-goods-header, .popular-manufacturers-header {
+  background-color: var(--basic-linen);
+  color: var(--basic-gray);
+}
+.popular-goods-header a, .popular-manufacturers-header a {
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+  color: var(--white);
+}
+.manufacturer-card {
+  width: 220px;
+  height: 145px;
+  border: 1px solid var(--light-gray);
+  background-color: var(--white);
+}
+.services {
+  width: 1200px;
+  background-color: var(--basic-background);
+  list-style: none;
+}
+.delivery-btn {
+  background-color: var(--white);
+  color: var(--basic-gray);
+}
+.guarantee-btn, .credit-btn {
+  background-color: var(--basic-gray);
+  color: var(--white);
+}
+.guarantee-btn:hover, .credit-btn:hover {
+  background-color: var(--dark-gray)
+}
+.service-delivery {
+  background-image: url("../img/png/delivery.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.service-guarantee {
+  background-image: url("../img/png/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.service-credit {
+  background-image: url("../img/png/credit.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+
 .description {
   font-style: italic;
   font-weight: normal;
@@ -139,8 +259,13 @@ a {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  color: var(--black);
   text-transform: uppercase;
+}
+.heading-small {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
 }
 .p-small {
   font-family: PT Sans;
@@ -160,7 +285,6 @@ a {
 }
 .transport-company-list {
   color: var(--black);
-  list-style: none;
 }
 .company-details-btn {
   background-color: var(--basic-red);
@@ -265,7 +389,12 @@ a {
   color: var(--black);
   border: 1px solid var(--dark-graylight);
 }
+.product-card {
+  width: 220px;
+  height: 318px;
+  border: 1px solid var(--light-gray);
 
+}
 .product-card:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
@@ -275,7 +404,7 @@ a {
   transform: rotate(45deg);
   text-transform: uppercase;
 }
-.text-btn {
+.btn-text {
   font-family: Cuprum;
   font-style: normal;
   font-weight: normal;
