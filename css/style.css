@@ -1419,6 +1419,9 @@ a {
   align-content: center;
   margin-bottom: 25px;
 }
+.hyphen {
+  padding-top: 10px;
+}
 .price-min, .price-max {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1430,6 +1433,7 @@ a {
   text-align: center;
   background-color: var(--dark-lilen);
 }
+
 input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   -webkit-appearance: none; margin: 0px;
   appearance: none; margin: 0px;
