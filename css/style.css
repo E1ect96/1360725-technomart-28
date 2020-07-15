@@ -471,7 +471,7 @@ a {
 .delivery-btn, .guarantee-btn, .credit-btn {
   border: 0;
   margin-bottom: 1px;
-  padding: 16px 0px 20px 23px;
+  padding: 18px 0px 20px 23px;
   width: 240px;
   text-align: left;
 }
@@ -746,12 +746,13 @@ a {
 }
 .transport-company-list {
   margin-top: 0;
+  margin-bottom: 20px;
   padding-left: 0;
   list-style: none;
   color: var(--black);
 }
 .transport-company-list li {
-  padding-bottom: 12px;
+  padding-bottom: 13px;
 }
 .transport-company-list li::before {
   content: "";
@@ -784,13 +785,11 @@ a {
   box-sizing: border-box;
   margin-top: 25px;
   width: 300px;
-  padding: 11px 61px 9px 62px;
+  padding: 9px 61px 9px 62px;
   background-color: var(--basic-red);
   color: var(--white);
   text-transform: uppercase;
 }
-
-
 .feedback-form {
   box-sizing: border-box;
   position: fixed;
@@ -942,14 +941,14 @@ a {
   display: flex;
   width: 940px;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 7px;
 
 }
 .footer-logo {
   box-sizing: border-box;
   width: 220px;
-  padding: 20px 41px 25px 41px;
+  padding: 20px 41px 21px 41px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--shadow);
 }
@@ -960,7 +959,7 @@ a {
   margin-left: 173px;
   margin-bottom: 0;
   padding-left: 0;
-  padding-top: 23px;
+  padding-top: 20px;
   padding-bottom: 0;
   list-style: none;
 }
@@ -1192,12 +1191,20 @@ a {
 .price-min, .price-max {
   box-sizing: border-box;
   border: 0;
+  border-radius: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 95px;
   text-align: center;
-  -webkit-appearance: none;
   background-color: var(--dark-lilen);
+}
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+  -webkit-appearance: none; margin: 0px;
+  appearance: none; margin: 0px;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+  appearance: none;
 }
 .filter-category {
   display: grid;
@@ -1562,9 +1569,9 @@ a {
   background-color: var(--basic-background);
 }
 .catalog-bottom {
-  margin-top: 59px;
-  padding-top: 50px;
-  padding-bottom: 68px;
+  margin-top: 70px;
+  padding-top: 41px;
+  padding-bottom: 70px;
 }
 
 .catalog-bottom p {
