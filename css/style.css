@@ -985,7 +985,7 @@ a {
 .footer-nav li:hover, .footer-catalog li:hover {
   text-decoration-line: underline;
 }
-.footer-nav li a:active, .footer-catalog li a:active {
+.footer-nav a:active, .footer-catalog a:active {
   opacity: 0.5;
 }
 .footer-bottom p {
@@ -1098,7 +1098,7 @@ a {
   padding-right: 16px;
   list-style: none;
 }
-.breadcrumbs li .home::before {
+.breadcrumbs .home::before {
   background: none;
 }
 .main-heading {
@@ -1212,8 +1212,6 @@ a {
   margin: 0;
   text-transform: uppercase;
   color: var(--black);
-}
-fieldset.filter-category {
 }
 .filter-category legend {
   width: 100%;
