@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -41,8 +41,9 @@
         </div>
         <div class="authorized visually-hidden">
           <a href="#" class="name">Равшан Джамшутович</a>
-          <a href="#" class="orders p-medium">Мои заказы</a>
-          <a href="#" class="account p-medium">Личный кабинет</a>
+          <a href="#" class="logout"></a>
+          <a href="#" class="orders">Мои заказы</a>
+          <a href="#" class="account ">Личный кабинет</a>
         </div>
       </section>
       <section class="container">
@@ -109,10 +110,10 @@
       <section class="popular-goods container">
         <div class="product-card">
             <img src="img/jpg/bfg9000.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 9000">
-            <div class="visually-hidden">
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
-            </div>
+            <div class="action">
+                <a href="#" class="buy btn-text">Купить</a>
+                <a href="#" class="to-bookmarks btn-text">В закладки</a>
+              </div>
             <span class="visually-hidden new btn-text">New</span>
             <p class="product-name">Перфоратор BOSCH BFG 9000</p>
             <p class="old-price">32500 Р.</p>
@@ -120,10 +121,10 @@
           </div>
         <div class="product-card">
             <img src="img/jpg/bfg3000.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
-            <div class="visually-hidden">
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
-            </div>
+            <div class="action">
+                <a href="#" class="buy btn-text">Купить</a>
+                <a href="#" class="to-bookmarks btn-text">В закладки</a>
+              </div>
             <span class="new btn-text">New</span>
             <p class="product-name">Перфоратор BOSCH BFG 3000</p>
             <p class="old-price">22500 Р.</p>
@@ -131,10 +132,10 @@
           </div>
         <div class="product-card">
             <img src="img/jpg/bfg6000.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
-            <div class="visually-hidden">
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
-            </div>
+            <div class="action">
+                <a href="#" class="buy btn-text">Купить</a>
+                <a href="#" class="to-bookmarks btn-text">В закладки</a>
+              </div>
             <span class="visually-hidden new btn-text">New</span>
             <p class="product-name">Перфоратор BOSCH BFG 6000</p>
             <p class="old-price">30500 Р.</p>
@@ -142,15 +143,23 @@
           </div>
         <div class="product-card">
             <img src="img/jpg/bfg2000.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
-            <div class="visually-hidden">
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
-            </div>
+            <div class="action">
+                <a href="#" class="buy btn-text">Купить</a>
+                <a href="#" class="to-bookmarks btn-text">В закладки</a>
+              </div>
             <span class="new btn-text">New</span>
             <p class="product-name">Перфоратор BOSCH BFG 2000</p>
             <p class="old-price hidden">12500</p>
             <p class="price">12500 Р.</p>
           </div>
+        <div class="cart-window visually-hidden">
+          <p class="heading-medium">Товар добавлен в корзину!</p>
+          <button class="close-btn" type="button" aria-label="Закрыть"></button>
+          <div class="cart-action">
+            <a href="#" class="btn-text cart-checkout">Оформить заказ</a>
+            <a href="#" class="btn-text cart-continue">Продолжить покупки</a>
+          </div>
+        </div>
       </section>
       <section class="popular-manufacturers-header container">
           <h2 class="heading-large">Популярные производители:</h2>
@@ -250,8 +259,32 @@
         <section class="contacts">
           <h2 class="heading-large">Контакты</h2>
           <p class="p-small">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="img/png/map.png" width="300" height="158" alt="Большая Конюшенная ул., 19" >
+          <a href="#"><img src="img/png/map.png" width="300" height="158" alt="Большая Конюшенная ул., 19"></a>
           <a href="#" class="btn-text feedback-btn" >Заблудились? Напишите нам</a>
+          <div class="feedback-form ">
+            <button class="close-btn" type="button" aria-label="Закрыть"></button>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="full-name p-large">
+                Ваше имя:
+                <input type="text" name="full-name" class="p-small" placeholder="Имя Фамилия">
+              </label>
+              <label class="email p-large">
+                Ваш e-mail:
+                <input type="email" name="email" class="p-small" placeholder="email@example.com">
+              </label>
+              <label class="feedback-text p-large">
+                Текст письма:
+                <textarea name="text" rows="4" class="p-small">В свободной форме</textarea>
+              </label>
+              <div class="submit-wrapper">
+                <button type="submit" class="submit btn-text">Отправить</button>
+              </div>
+            </form>
+          </div>
+          <div class="map visually-hidden">
+            <button class="close-btn" type="button" aria-label="Закрыть"></button>
+            <a href="#"><img src="img/png/map-large.png" width="970" height="477" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+          </div>
         </section>
       </section>
     </main>
